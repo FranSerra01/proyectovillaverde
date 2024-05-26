@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Home</title>
+</head>
+
+<body>
+    <!-- Start of nav section -->
+    <nav>
+        <a href="./index.html">
+            <img class="logo" src="img/logoPabloVillaverde.png" alt="logo">
+        </a>
+        
+        <ul id="menu-links">
+            <li>
+                <a href="./index.html">Inicio</a>
+                <a href="./proyectos.html">Proyectos</a>
+                <a href="./sobremi.html">Sobre mi</a>
+                <a href="./galeria.html">Galeria</a>
+                <a href="./contacto.html">Contacto</a>
+            </li>
+        </ul>
+
+        <img src="img/menu.png" alt="Icono del menu" class="menuIcon" onclick="toogleMenu()">
+    </nav>
+    <!-- End of Nav section -->
+
+    <!-- Start of Header Hero section -->
+    <header>
+    <div class="header">
+
+        <div class="headerContent">
+            
+            <h1><span>ESCULTOR</span><br><span>REALIZADOR</span></h1>
+            
+            <div class="btnContainer">
+                <a href="./contacto.html">
+                    <button class="btnDark">Contacto <img src="img/phone.png" alt="Icono Telefono"></button>
+                </a>
+                <a href="./sobremi.html">
+                    <button class="btnLight">Conocer mas <img src="img/flechaNegra.png" alt="Flecha Negra"></button>
+                </a>
+                <p>Realización de escenografía / Escultura profesional para empresas de comunicación y Marketing de renombre.</p>
+            </div>
+            
+        </div>
+        
+        <img src="img/pabloBarco.png" alt="Foto de pablo" class="userImg">
+        
+    </div>
+    </header>
+    <!-- End of Header Hero section -->
+
+    <!-- Start of Proyects section -->
+    <section id="proyects">
+        <div class="container">
+            <h2 class="sectionHeading">Proyectos</h2>
+            <div class="allItems">
+
+                <div class="item">
+                    <div class="left">
+                        <div class="img">
+                            <img src="img/Proyecto 2.jpg" alt="Proyecto 1" class="imgPV">
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h2 class="proyectTitle">Proyecto 1</h2>
+                        <h3 class="proyectSub">Subtitulo</h3>
+                        
+                        <p class="projectDescript">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime aliquid ducimus asperiores cumque magni quaerat. Necessitatibus adipisci rerum expedita, labore aliquam commodi optio quas provident ipsum maiores temporibus magnam nam?</p>
+                        
+                        <div class="buttons">
+                            <a href="#" class="primaryBtn">Saber mas</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="left">
+                        <div class="img">
+                            <img src="img/Proyecto 1.jpg" alt="Proyecto 1" class="imgPH">
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h2 class="proyectTitle">Proyecto 2</h2>
+                        <h3 class="proyectSub">Subtitulo</h3>
+                        
+                        <p class="projectDescript">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime aliquid ducimus asperiores cumque magni quaerat. Necessitatibus adipisci rerum expedita, labore aliquam commodi optio quas provident ipsum maiores temporibus magnam nam?</p>
+                        
+                        <div class="buttons">
+                            <a href="#" class="primaryBtn">Saber mas</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="left">
+                        <div class="img">
+                            <img src="img/Proyecto 3.jpg" alt="Proyecto 1" class="imgPV">
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h2 class="proyectTitle">Proyecto 3</h2>
+                        <h3 class="proyectSub">Subtitulo</h3>
+                        
+                        <p class="projectDescript">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime aliquid ducimus asperiores cumque magni quaerat. Necessitatibus adipisci rerum expedita, labore aliquam commodi optio quas provident ipsum maiores temporibus magnam nam?</p>
+                        
+                        <div class="buttons">
+                            <a href="#" class="primaryBtn">Saber mas</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!-- End of Proyects section -->
+
+    <!-- Start of Footer section -->
+    <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+
+            <div class="footerNav">
+                <ul id="menu-links">
+                    <li>
+                        <a href="./index.html">Inicio</a>
+                        <a href="./proyectos.html">Proyectos</a>
+                        <a href="./sobremi.html">Sobre mi</a>
+                        <a href="./galeria.html">Galeria</a>
+                        <a href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footerBottom">
+                <p>Copyright &copy; 2024 ; Diseñado por<span class="diseñador">Francisco Serra</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Start of JS section -->
+    <script>
+
+        let navbar = document.querySelector('nav');
+        let menuLinks = document.getElementById("menu-links");
+
+        function toogleMenu(){
+            menuLinks.classList.toggle('show-menu');
+        }
+
+        window.onscroll = function(){
+            if(window.scrollY > 0)
+                navbar.style.background = '#eefff9';
+            else
+                navbar.style.background = 'transparent';
+        }
+    </script>
+    <!-- End of JS section -->
+
+</body>
+
+</html>
