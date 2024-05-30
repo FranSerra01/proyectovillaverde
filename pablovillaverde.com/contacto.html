@@ -9,9 +9,7 @@
 </head>
 
 <body>
-
-    <nav>
-
+    <nav class="genericNav">
         <a href="./index.html">
             <img class="logo" src="img/logoPabloVillaverde.png" alt="logo">
         </a>
@@ -27,11 +25,9 @@
         </ul>
         
         <img src="img/menu.png" alt="Icono del menu" class="menuIcon" onclick="toogleMenu()">
-
     </nav>
 
     <section class="contact-section">
-
         <h2>Contacto</h2>
         
         <form action="#" method="post">
@@ -40,7 +36,6 @@
             <textarea name="mensaje" placeholder="Mensaje"></textarea>
             <button type="submit">Enviar</button>
         </form>
-
     </section>
 
     <footer>
@@ -62,6 +57,7 @@
                     </li>
                 </ul>
             </div>
+
             <div class="footerBottom">
                 <p>Copyright &copy; 2024 ; Diseñado por<span class="diseñador">Francisco Serra</span></p>
             </div>
@@ -69,22 +65,12 @@
     </footer>
 
     <script>
-
         let navbar = document.querySelector('nav');
         let menuLinks = document.getElementById("menu-links");
 
         function toogleMenu(){
             menuLinks.classList.toggle('show-menu');
         }
-
-        window.onscroll = function(){
-            if(window.scrollY > 0)
-                navbar.style.background = '#eefff9';
-            else{
-                window.scrollY.background = 'transparent';
-            }
-        }
     </script>
-    
 </body>
 </html>

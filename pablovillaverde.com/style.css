@@ -36,6 +36,11 @@ nav li a{
     color: #000;
 }
 
+nav .logo{
+    width: 120px;
+    cursor: pointer;
+}
+
 /* Linea de subrallado con animacion de hover en el nav menu */
 #menu-links > li > a {
     position: relative;
@@ -54,12 +59,6 @@ nav li a{
 
 #menu-links > li > a:hover::after {
     width: 100%;
-}
-/*=======================================*/
-
-nav .logo{
-    width: 120px;
-    cursor: pointer;
 }
 
 /*================ FOOTER ===================*/
@@ -140,8 +139,6 @@ footer{
     font-weight: 400;
     margin: 0px 5px;
 }
-
-
 
 /*================ HEADER INDEX ===================*/
 
@@ -272,6 +269,15 @@ footer{
     padding: 10rem 0;
 }
 
+.sectionHeading{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.allItems{
+    margin: 0px 20px;
+}
 #proyects .item{
     display: flex;
     align-items: center;
@@ -293,7 +299,7 @@ footer{
     flex: 1;
     margin-left: -150px;
     background-color: white;
-    padding: 5rem 2rem;
+    padding: 2rem 2rem;
     border-radius: 12px;
     box-shadow: 0 0 20px #000028;
     z-index: 2;
@@ -325,17 +331,56 @@ footer{
     background-color: #e4a4a438;
 }
 
-#proyects .item .left .img{
+.buttons{
+    flex-direction: column;
+    width: 110px;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    margin: 10px 10px 10px 0px;
+    border-radius: 40px;
+}
+
+.buttons a{
+    width: 100%;
+    padding: 1px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+#proyects .item .left .img img{
     object-fit: cover;
+    transition: 0.3s ease transform;
+}
+
+#proyects .item:hover .left .img img{
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+#proyects .item .right .proyectTitle{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#proyects .item .right .proyectSub{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#proyects .item .right .projectDescript{
+    color: rgb(62, 62, 62);
+    margin-bottom: 2rem;
 }
 
 /*IMG Proyectos vertical e horizontal*/
 .imgPV{
-    height: 670px;
+    width: 100%;
 }
 
 .imgPH{
-    height: 450px;
+    height: 100%;
 }
 
 
@@ -389,6 +434,52 @@ footer{
 
 /*================ SOBRE MI ===================*/
 
+/*---------------- SOBRE MI NAV ---------------*/
+
+.aboutNav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    border-bottom: none;
+}
+
+
+nav .aboutLogo{
+    width: 120px;
+    cursor: pointer;
+    filter: brightness(0) invert(1);
+}
+
+.aboutNav li a{
+    color: white;
+}
+
+/* Linea de subrallado con animacion de hover en el nav menu */
+#menuLinksAbout > li > a {
+    position: relative;
+}
+
+#menuLinksAbout > li > a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: width 0.3s ease-in-out;
+}
+
+#menuLinksAbout > li > a:hover::after {
+    width: 100%;
+}
+
 /*---------------- VIDEO HEADER ---------------*/
 
 .hero{
@@ -402,31 +493,93 @@ footer{
     justify-content: center;
 }
 
-.content{
+.contentAbout{
     text-align: center;
 }
 
-.content h1{
-    font-size: 140px;
+.contentAbout h1{
+    font-size: 9em;
     color: white;
     font-weight: 600;
+    transition: 0.5s;
 }
 
-.content a{
-    text-decoration: none;
-    display: inline-block;
-    color: white;
-    font-size: 24px;
-    border: 2px solid white;
-    padding: 14px 70px;
-    border-radius: 50px;
-    margin-top: 20px;
+.contentAbout h1:hover{
+    -webkit-text-stroke: 2px white;
+    color: transparent;
 }
 
+.backVideo{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media(min-aspect-ratio: 16/9){
+    .backVideo{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-aspect-ratio: 16/9){
+    .backVideo{
+        width: auto;
+        height: 100%;
+    }
+}
+
+/*================ GALERIA ===================*/
+
+.container{
+    padding: 3rem;
+}
+
+.h1Gal{
+    font-size: 3rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.imageGal{
+    display: block;
+    width: 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.caption{
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.thumbnail:hover{
+    transform: translateY(-4px);
+}
+
+.imgContainer:hover .overlay{
+    opacity: 1;
+}
 /*=============================== MEDIA QUERY ZONE =====================================*/
 
 /*----------- MEDIA Q (860px)------------*/
-@media (max-width: 860px){
+@media only screen and (max-width: 860px){
 
     /*----------- MEDIA QUERIES PARA NAVBAR (860px)------------*/
     nav ul{
@@ -440,11 +593,11 @@ footer{
         overflow: hidden;
         transition: max-height 0.5s;
     }
-
+    
     nav ul li a{
-        color: #fff;
+        color: white;
     }
-
+    
     .btnNav{
         display: none;
     }
@@ -464,10 +617,32 @@ footer{
     }
 }
 
+/*----------- MEDIA QUERIES PARA PROYECTS SECTION INDEX (860px)------------*/
+
+@media only screen and (max-width: 768px) {
+    #proyects .item{
+        flex-direction: column;
+    }
+    #proyects .item .left{
+        width: 100%;
+    }
+    #proyects .item .right{
+        width: 90%;
+        margin-left: 0;
+        margin-top: -70px;
+    }
+    #proyects .item:nth-child(even){
+        flex-direction: column;
+    }
+    #proyects .item:nth-child(even) .left{
+        margin-left: 0;
+    }
+}
+
 /*----------- MEDIA Q (910px)------------*/
 
-@media (max-width: 910px) {
-
+@media only screen and (max-width: 910px) {
+    
     /*----------- MEDIA QUERIES PARA EL HEADER (910px)------------*/
     .header{
         height: 100%;
@@ -476,18 +651,16 @@ footer{
     .userImg{
         width: 100%;
         right: 0;
-        padding: 20% 10% 10% 10%;
         position: relative;
-        bottom: 0;
-        
+        bottom: 0; 
     }
     .headerContent{
         position: absolute;
         bottom: 0;
         padding: 0 10%;
         z-index: 2;
-        padding-bottom: 20px;
-        background: linear-gradient(transparent,#fff);
+        padding-bottom: 30px;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 90%, rgba(255, 255, 255, 0));
     }
     .btnContainer{
         margin: 5px 0;

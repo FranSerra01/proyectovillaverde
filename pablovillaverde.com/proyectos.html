@@ -9,9 +9,7 @@
 </head>
 
 <body>
-
-    <nav>
-
+    <nav class="genericNav">
         <a href="./index.html">
             <img class="logo" src="img/logoPabloVillaverde.png" alt="logo">
         </a>
@@ -27,7 +25,6 @@
         </ul>
 
         <img src="img/menu.png" alt="Icono del menu" class="menuIcon" onclick="toogleMenu()">
-
     </nav>
 
     <footer>
@@ -56,20 +53,11 @@
     </footer>
     
     <script>
-
         let navbar = document.querySelector('nav');
         let menuLinks = document.getElementById("menu-links");
 
         function toogleMenu(){
             menuLinks.classList.toggle('show-menu');
-        }
-
-        window.onscroll = function(){
-            if(window.scrollY > 0)
-                navbar.style.background = '#eefff9';
-            else{
-                window.scrollY.background = 'transparent';
-            }
         }
     </script>
 

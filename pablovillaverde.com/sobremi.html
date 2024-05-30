@@ -9,27 +9,30 @@
 </head>
 
 <body>
+    <div class="hero">
+        <video autoplay loop muted plays-inline class="backVideo">
+            <source src="./vid/ConstrucciónDeLaEscenografía.mp4" type="video/mp4">
+        </video>
 
-    <nav>
-        <a href="./index.html">
-            <img class="logo" src="img/logoPabloVillaverde.png" alt="logo">
-        </a>
-        
-        <ul id="menu-links">
-            <li>
-                <a href="./index.html">Inicio</a>
-                <a href="./proyectos.html">Proyectos</a>
-                <a href="./sobremi.html">Sobre mi</a>
-                <a href="./galeria.html">Galeria</a>
-                <a href="./contacto.html">Contacto</a>
-            </li>
-        </ul>
-
-        <img src="img/menu.png" alt="Icono del menu" class="menuIcon" onclick="toogleMenu()">
-    </nav>
+        <nav class="genericNav aboutNav">
+            <a href="./index.html">
+                <img class="aboutLogo" src="img/logoPabloVillaverde.png" alt="logo">
+            </a>
+            
+            <ul id="menuLinksAbout">
+                <li>
+                    <a href="./index.html">Inicio</a>
+                    <a href="./proyectos.html">Proyectos</a>
+                    <a href="./sobremi.html">Sobre mi</a>
+                    <a href="./galeria.html">Galeria</a>
+                    <a href="./contacto.html">Contacto</a>
+                </li>
+            </ul>
     
-    <div class="hero">  
-        <div class="content">
+            <img src="img/menu.png" alt="Icono del menu" class="menuIcon" onclick="toogleMenu()">
+        </nav>
+
+        <div class="contentAbout">
             <h1>Sobre mi</h1>
         </div>
     </div>
@@ -60,19 +63,11 @@
     </footer>
 
     <script>
-        let navbar = document.querySelector('nav');
+        let navbar = document.querySelector('.aboutNav');
         let menuLinks = document.getElementById("menu-links");
-
+    
         function toogleMenu(){
             menuLinks.classList.toggle('show-menu');
-        }
-
-        window.onscroll = function(){
-            if(window.scrollY > 0)
-                navbar.style.background = '#eefff9';
-            else{
-                window.scrollY.background = 'transparent';
-            }
         }
     </script>    
 </body>

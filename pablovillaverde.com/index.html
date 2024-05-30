@@ -10,7 +10,7 @@
 
 <body>
     <!-- Start of nav section -->
-    <nav>
+    <nav class="genericNav">
         <a href="./index.html">
             <img class="logo" src="img/logoPabloVillaverde.png" alt="logo">
         </a>
@@ -89,7 +89,7 @@
                         <h2 class="proyectTitle">Proyecto 2</h2>
                         <h3 class="proyectSub">Subtitulo</h3>
                         
-                        <p class="projectDescript">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime aliquid ducimus asperiores cumque magni quaerat. Necessitatibus adipisci rerum expedita, labore aliquam commodi optio quas provident ipsum maiores temporibus magnam nam?</p>
+                        <p class="projectDescript">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime aliquid ducimus asperiores cumque magni quaerat. Necessitatibus adipisci rerum expedita</p>
                         
                         <div class="buttons">
                             <a href="#" class="primaryBtn">Saber mas</a>
@@ -110,7 +110,7 @@
                         <p class="projectDescript">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime aliquid ducimus asperiores cumque magni quaerat. Necessitatibus adipisci rerum expedita, labore aliquam commodi optio quas provident ipsum maiores temporibus magnam nam?</p>
                         
                         <div class="buttons">
-                            <a href="#" class="primaryBtn">Saber mas</a>
+                            <a href="proyectos.html" class="primaryBtn">Saber mas</a>
                         </div>
                     </div>
                 </div>
@@ -147,25 +147,13 @@
         </div>
     </footer>
 
-    <!-- Start of JS section -->
     <script>
-
         let navbar = document.querySelector('nav');
         let menuLinks = document.getElementById("menu-links");
 
         function toogleMenu(){
             menuLinks.classList.toggle('show-menu');
         }
-
-        window.onscroll = function(){
-            if(window.scrollY > 0)
-                navbar.style.background = '#eefff9';
-            else
-                navbar.style.background = 'transparent';
-        }
     </script>
-    <!-- End of JS section -->
-
 </body>
-
 </html>

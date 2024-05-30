@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"> 
     <title>Galeria</title>
 </head>
 
 <body>
-
-    <nav>
-        
+    <nav class="genericNav">
         <a href="./index.html">
             <img class="logo" src="img/logoPabloVillaverde.png" alt="logo">
         </a>
@@ -27,8 +26,103 @@
         </ul>
 
         <img src="img/menu.png" alt="Icono del menu" class="menuIcon" onclick="toogleMenu()">
-
     </nav>
+
+    <div class="container">
+
+        <h1 class="h1Gal">Galeria</h1>
+
+        <div class="row">
+
+            <div class="col-lg-4 col-sm-6">
+                <div class="thumbnail">
+                    <div class="imgContainer">
+                        <img src="img/pieza1.jpg" alt="pieza 1" class="imageGal">
+                        <div class="overlay">
+                            <p class="caption">Caption</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+                <div class="thumbnail">
+                    <div class="imgContainer">
+                        <img src="img/pieza2.jpg" alt="pieza 2" class="imageGal">
+                        <div class="overlay">
+                            <p class="caption">Caption</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+                <div class="thumbnail">
+                    <div class="imgContainer">
+                        <img src="img/pieza3.jpg" alt="pieza 3" class="imageGal">
+                        <div class="overlay">
+                            <p class="caption">Caption</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+                <div class="thumbnail">
+                    <div class="imgContainer">
+                        <img src="img/pieza4.jpg" alt="pieza 4" class="imageGal">
+                        <div class="overlay">
+                            <p class="caption">Caption</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+                <div class="thumbnail">
+                    <div class="imgContainer">
+                        <img src="img/pieza5.jpg" alt="pieza 5" class="imageGal">
+                        <div class="overlay">
+                            <p class="caption">Caption</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+                <div class="thumbnail">
+                    <div class="imgContainer">
+                        <img src="img/pieza6.jpg" alt="pieza 6" class="imageGal">
+                        <div class="overlay">
+                            <p class="caption">Caption</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+                <div class="thumbnail">
+                    <div class="imgContainer">
+                        <img src="img/pieza7.jpg" alt="pieza 7" class="imageGal">
+                        <div class="overlay">
+                            <p class="caption">Caption</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+                <div class="thumbnail">
+                    <div class="imgContainer">
+                        <img src="img/pieza8.jpg" alt="pieza 8" class="imageGal">
+                        <div class="overlay">
+                            <p class="caption">Caption</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <footer>
         <div class="footerContainer">
@@ -56,22 +150,13 @@
     </footer>
 
     <script>
-
         let navbar = document.querySelector('nav');
         let menuLinks = document.getElementById("menu-links");
 
         function toogleMenu(){
             menuLinks.classList.toggle('show-menu');
         }
-
-        window.onscroll = function(){
-            if(window.scrollY > 0)
-                navbar.style.background = '#eefff9';
-            else{
-                window.scrollY.background = 'transparent';
-            }
-        }
     </script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
