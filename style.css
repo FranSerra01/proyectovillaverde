@@ -8,139 +8,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/*================ NAV BAR ===================*/
-
-nav{
-    background-color: white;
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 10%;
-    border-bottom: 1px solid #000;
-}
-
-nav li{
-    list-style: none;
-}
-
-nav li a{
-    text-decoration: none;
-    display: inline-block;
-    margin: 10px 20px;
-    font-weight: 500;
-    cursor: pointer;
-    color: #000;
-}
-
-nav .logo{
-    width: 120px;
-    cursor: pointer;
-}
-
-/* Linea de subrallado con animacion de hover en el nav menu */
-#menu-links > li > a {
-    position: relative;
-}
-
-#menu-links > li > a::after {
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #000000;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: width 0.3s ease-in-out;
-}
-
-#menu-links > li > a:hover::after {
-    width: 100%;
-}
-
-/*================ FOOTER ===================*/
-
-footer{
-    background-color: black;
-}
-
-.footerContainer{
-    width: 100%;
-    padding: 70px 30px 20px;
-}
-
-.socialIcons{
-    display: flex;
-    justify-content: center;
-}
-
-.socialIcons a{
-    text-decoration: none;
-    padding: 10px;
-    background-color: #fff;
-    margin: 10px;
-    border-radius: 15%;
-}
-
-.socialIcons a i{
-    font-size: 2em;
-    color: black;
-    opacity: 0.9;
-}
-
-.socialIcons a:hover{
-    background-color: black;
-    transition: 0.5s;
-}
-
-.socialIcons a:hover i{
-    color: white;
-    transition: 0.5s;
-}
-
-.footerNav{
-    margin: 30px 0;
-}
-
-.footerNav ul{
-    display: flex;
-    justify-content: center;
-}
-
-.footerNav ul li a{
-    color: white;
-    margin: 20px;
-    text-decoration: none;
-    font-size: 1.3em;
-    opacity: 0.7;
-    transition: 0.5;
-}
-
-.footerNav ul li a:hover{
-    opacity: 1;
-}
-
-.footerBottom{
-    background-color: black;
-    padding: 20px;
-    text-align: center;
-}
-
-.footerBottom p{
-    color: white;
-}
-
-.diseñador{
-    opacity: 0.7;
-    text-transform: 1px;
-    font-weight: 400;
-    margin: 0px 5px;
-}
-
-/*================ HEADER INDEX ===================*/
+/*================ INDEX ===================*/
 
 .header{
     width: 100%;
@@ -258,12 +126,7 @@ footer{
     }
 }
 
-/*=======================================*/
-
-
-
-
-/*================ PROYECTS SECTION INDEX ===================*/
+/*---------------- PROYECTS SECTION INDEX ----------------*/
 
 #proyects{
     padding: 10rem 0;
@@ -383,53 +246,71 @@ footer{
     height: 100%;
 }
 
+/*================ PROYECTOS ===================*/
+
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.siTuviera{
+    padding: 20px;
+}
 
 /*================ CONTACTO ===================*/
 
 /*---------------- CONTACT FORM ---------------*/
 
-.contact-section{
-    background-color: #ffffff;
-    padding: 50px;
-    text-align: center;
-    animation: fadeInUp 1s ease;
-    margin-top: 50px; 
-    position: relative;
-    z-index: 1;
+.formArea{
+    padding-top: 7%;
 }
 
-.contact-section h2{
-    margin-bottom: 20px;
+.row.single-form{
+    box-shadow: 0 2px 20px -5px rgba(0,0,0,0.5);
 }
 
-.contact-section form{
+.leftC{
+    background: blueviolet;
+    padding: 200px 98px;
+}
+
+.leftC h2{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 60px;
 }
 
-.contact-section input[type="text"],
-.contact-section input[type="email"],
-.contact-section textarea{
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.rightC{
+    padding: 70px 100px;
+    position: absolute;
 }
 
-.contact-section button{
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
+.rightC i{
+    position: absolute;
+    font-size: 80px;
+    left: -27px;
+    top: 40%;
+    color: white;
+}
+
+.form-control{
+    border: 2px solid black;
+}
+
+.rightC button{
     border: none;
-    border-radius: 5px;
+    border-radius: 0;
+    background: #252525;
+    width: 180px;
+    color: white;
+    padding: 15px 0;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.contact-section button:hover{
-    background-color: #0056b3;
 }
 
 /*================ SOBRE MI ===================*/
@@ -576,12 +457,147 @@ nav .aboutLogo{
 .imgContainer:hover .overlay{
     opacity: 1;
 }
+
+/*================ NAV BAR ===================*/
+
+nav{
+    background-color: white;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10%;
+    border-bottom: 1px solid #000;
+}
+
+nav li{
+    list-style: none;
+}
+
+nav li a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 20px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #000;
+}
+
+nav .logo{
+    width: 120px;
+    cursor: pointer;
+}
+
+/* Linea de subrallado con animacion de hover en el nav menu */
+#menu-links > li > a {
+    position: relative;
+}
+
+#menu-links > li > a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #000000;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: width 0.3s ease-in-out;
+}
+
+#menu-links > li > a:hover::after {
+    width: 100%;
+}
+
+/*================ FOOTER ===================*/
+
+footer{
+    background-color: black;
+}
+
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 15%;
+}
+
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+.socialIcons a:hover{
+    background-color: black;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+
+.footerNav{
+    margin: 30px 0;
+}
+
+
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.footerNav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5;
+}
+
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+
+.footerBottom{
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p{
+    color: white;
+}
+
+.diseñador{
+    opacity: 0.7;
+    text-transform: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
 /*=============================== MEDIA QUERY ZONE =====================================*/
 
 /*----------- MEDIA Q (860px)------------*/
 @media only screen and (max-width: 860px){
 
-    /*----------- MEDIA QUERIES PARA NAVBAR (860px)------------*/
+    /*----------- MEDIA Q (860px)------------*/
     nav ul{
         position: absolute;
         width: 100%;
@@ -617,7 +633,7 @@ nav .aboutLogo{
     }
 }
 
-/*----------- MEDIA QUERIES PARA PROYECTS SECTION INDEX (860px)------------*/
+/*----------- MEDIA Q (860px)------------*/
 
 @media only screen and (max-width: 768px) {
     #proyects .item{
@@ -641,9 +657,7 @@ nav .aboutLogo{
 
 /*----------- MEDIA Q (910px)------------*/
 
-@media only screen and (max-width: 910px) {
-    
-    /*----------- MEDIA QUERIES PARA EL HEADER (910px)------------*/
+@media only screen and (max-width: 910px) {    
     .header{
         height: 100%;
         padding: 0;
