@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+// ============ NAV BAR ================ //
+
+nav {
+    background-color: white;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10%;
+    border-bottom: 1px solid #000;
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        display: inline-block;
+        margin: 10px 20px;
+        font-weight: 500;
+        cursor: pointer;
+        color: #000;
+        position: relative;
+
+        &::after {
+            content: '';
+            width: 0;
+            height: 3px;
+            background: #000000;
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            transition: width 0.3s ease-in-out;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+    }
+
+    .logo {
+        width: 120px;
+        cursor: pointer;
+    }
+}
+
+
+// ============ FOOTER ================ //
+
+footer {
+    background-color: black;
+    
+    .footerContainer {
+        width: 100%;
+        padding: 70px 30px 20px;
+    }
+
+    .socialIcons {
+        display: flex;
+        justify-content: center;
+
+        a {
+            text-decoration: none;
+            padding: 10px;
+            background-color: #fff;
+            margin: 10px;
+            border-radius: 15%;
+
+            i {
+                font-size: 2em;
+                color: black;
+                opacity: 0.9;
+            }
+
+            &:hover {
+                background-color: black;
+                transition: 0.5s;
+
+                i {
+                    color: white;
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+
+    .footerNav {
+        margin: 30px 0;
+
+        ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+
+            li {
+                a {
+                    color: white;
+                    margin: 20px;
+                    text-decoration: none;
+                    font-size: 1.3em;
+                    opacity: 0.7;
+                    transition: 0.5s;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    .footerBottom {
+        background-color: black;
+        padding: 20px;
+        text-align: center;
+
+        p {
+            color: white;
+        }
+    }
+
+    .diseñador {
+        opacity: 0.7;
+        text-transform: 1px;
+        font-weight: 400;
+        margin: 0px 5px;
+    }
+}
+

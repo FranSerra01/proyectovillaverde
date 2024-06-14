@@ -1,0 +1,99 @@
+/*----------- MEDIA Q (860px)------------*/
+@media only screen and (max-width: 860px){
+
+    /*----------- MEDIA Q (860px)------------*/
+    nav ul{
+        position: absolute;
+        width: 100%;
+        background: #000000;
+        left: 0;
+        top: 100%;
+        text-align: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    
+    nav ul li a{
+        color: white;
+    }
+    
+    .btnNav{
+        display: none;
+    }
+    nav .logo{
+        width: 150px;
+    }
+    nav ul li{
+        margin: 10px;
+        font-size: 12px;
+    }
+    .menuIcon{
+        display: block;
+        width: 50px;
+    }
+    .show-menu{
+        max-height: 60px;
+    }
+}
+
+/*----------- MEDIA Q (860px)------------*/
+
+@media only screen and (max-width: 768px) {
+    #proyects .item{
+        flex-direction: column;
+    }
+    #proyects .item .left{
+        width: 100%;
+    }
+    #proyects .item .right{
+        width: 90%;
+        margin-left: 0;
+        margin-top: -70px;
+    }
+    #proyects .item:nth-child(even){
+        flex-direction: column;
+    }
+    #proyects .item:nth-child(even) .left{
+        margin-left: 0;
+    }
+}
+
+/*----------- MEDIA Q (910px)------------*/
+
+@media only screen and (max-width: 910px) {    
+    .header{
+        height: 100%;
+        padding: 0;
+    }
+    .userImg{
+        width: 100%;
+        right: 0;
+        position: relative;
+        bottom: 0; 
+    }
+    .headerContent{
+        position: absolute;
+        bottom: 0;
+        padding: 0 10%;
+        z-index: 2;
+        padding-bottom: 30px;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 90%, rgba(255, 255, 255, 0));
+    }
+    .btnContainer{
+        margin: 5px 0;
+    }
+    .header button{
+        font-size: 14px;
+        margin-right: 10px;
+    }
+    .btnDark{
+        padding: 7px 7px 7px 20px;
+        margin-bottom: 10px;
+    }
+    .btn-dark img{
+        width: 30px;
+        padding: 5px;
+        margin-left: 15px;
+    }
+}

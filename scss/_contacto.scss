@@ -1,0 +1,52 @@
+//====== CONTACTO ======//
+
+.formArea {
+    padding-top: 7%;
+}
+
+.row.single-form {
+    box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.5);
+}
+
+.leftC {
+    background: blueviolet;
+    padding: 200px 98px;
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-weight: 700;
+        font-size: 60px;
+    }
+}
+
+.rightC {
+    padding: 70px 100px;
+    position: absolute;
+
+    i {
+        position: absolute;
+        font-size: 80px;
+        left: -27px;
+        top: 40%;
+        color: white;
+    }
+
+    button {
+        border: none;
+        border-radius: 0;
+        background: #252525;
+        width: 180px;
+        color: white;
+        padding: 15px 0;
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+}
+
+.form-control {
+    border: 2px solid black;
+}
